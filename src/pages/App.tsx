@@ -1,26 +1,32 @@
-import { Button, Typography, Box } from '@mui/material';
+import React from 'react';
+import Grid from '@mui/material/Grid';
+import LeftSide from '../components/LeftSide';
+import RightSide from '../components/RightSide';
 
-function App() {
+export default function LoginPage() {
   return (
-    <>
-      <Box sx={{ p: 4 }}>
-        <Typography variant="h1" color="primary">
-          MUI is working
-        </Typography>
-        <Button variant="contained" color="secondary">
-          Test Button
-        </Button>
-      </Box>
-      <Box sx={{ p: 4 }}>
-        <Typography variant="h1" color="primary">
-          MUI is working
-        </Typography>
-        <Button variant="contained" color="secondary">
-          Test Button
-        </Button>
-      </Box>
-    </>
+    <Grid
+      container
+      spacing={3}
+      sx={{
+        display: 'flex',
+        width: '100%',
+        minHeight: '100vh',
+        alignItems: 'center',
+        px: { xs: 0, md: 6 },
+        flexDirection: {
+          xs: 'column-reverse',
+          md: 'row',
+        },
+      }}
+    >
+      <Grid size={{ xs: 12, md: 6 }}>
+        <LeftSide />
+      </Grid>
+
+      <Grid size={{ xs: 12, md: 6 }} sx={{ display: { xs: 'none', md: 'block' } }}>
+        <RightSide />
+      </Grid>
+    </Grid>
   );
 }
-
-export default App;

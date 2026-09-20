@@ -5,10 +5,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { auth } from "../../firebase/firebase";
 
 
-const googleProvider = new GoogleAuthProvider();
-
 export default function SocialLogin() {
-
   const handleGoogleLogin = async () => {
     try {
       const provider = new GoogleAuthProvider();
@@ -22,6 +19,10 @@ export default function SocialLogin() {
       console.log("Email:", user.email);
       console.log("Photo:", user.photoURL);
       console.log("UID:", user.uid);
+
+      // after successful login navigate to dashbord
+      window.location.assign('/dashboard');
+
     } catch (error) {
       console.error("Google login failed:", error);
     }

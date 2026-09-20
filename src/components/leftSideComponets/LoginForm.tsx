@@ -50,7 +50,9 @@ export default function LoginForm() {
         password,
       });
 
-      // Backend/login API will be added later
+      // Backend/login API will be aded later
+      // after log in navigate to dashboard
+      window.location.assign('/dashboard');
     }
   };
 

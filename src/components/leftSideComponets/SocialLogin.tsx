@@ -1,4 +1,3 @@
-import React from 'react';
 import { Box, Divider, Typography, IconButton } from '@mui/material';
 import { FcGoogle } from 'react-icons/fc';
 import { FaApple, FaFacebook } from 'react-icons/fa';

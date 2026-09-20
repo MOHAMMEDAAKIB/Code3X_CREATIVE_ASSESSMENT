@@ -1,9 +1,8 @@
-import React from 'react';
+
 import { Box, Typography, Link } from '@mui/material';
 import WelcomeHeader from './leftSideComponets/WelcomeHeader';
 import LoginForm from './leftSideComponets/LoginForm';
 import SocialLogin from './leftSideComponets/SocialLogin';
-import theme from '../theme/theme';
 
 export default function LeftSide() {
 

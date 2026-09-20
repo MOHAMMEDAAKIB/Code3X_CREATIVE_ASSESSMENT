@@ -1,8 +1,6 @@
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
 import theme from '../theme/theme';
-import image from '../assets/undraw_unlock_m0yr.svg';
 import TextSection from './RightSideComponets/TextSection';
 import ImageSection from './RightSideComponets/Imagesection';
 

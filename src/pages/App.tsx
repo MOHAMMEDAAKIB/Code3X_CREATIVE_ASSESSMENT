@@ -1,4 +1,3 @@
-import React from 'react';
 import Grid from '@mui/material/Grid';
 import LeftSide from '../components/LeftSide';
 import RightSide from '../components/RightSide';

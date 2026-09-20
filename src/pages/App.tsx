@@ -3,15 +3,15 @@ import Grid from '@mui/material/Grid';
 import LeftSide from '../components/LeftSide';
 import RightSide from '../components/RightSide';
 
-export default function LoginPage() {
+export default function App() {
   return (
     <Grid
       container
-      spacing={3}
+      spacing={2}
       sx={{
         display: 'flex',
         width: '100%',
-        minHeight: '100vh',
+        height: '100vh',
         alignItems: 'center',
         px: { xs: 0, md: 6 },
         flexDirection: {
@@ -20,11 +20,26 @@ export default function LoginPage() {
         },
       }}
     >
-      <Grid size={{ xs: 12, md: 6 }}>
+      <Grid
+        size={{ xs: 12, md: 6 }}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
         <LeftSide />
       </Grid>
 
-      <Grid size={{ xs: 12, md: 6 }} sx={{ display: { xs: 'none', md: 'block' } }}>
+      <Grid
+        size={{ xs: 12, md: 6 }}
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          background4olor: 'background.paper',
+        }}
+      >
         <RightSide />
       </Grid>
     </Grid>

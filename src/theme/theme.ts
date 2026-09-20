@@ -1,4 +1,3 @@
-// theme.ts
 import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -53,7 +52,7 @@ const theme = createTheme({
         {
           props: { variant: 'contained', color: 'primary' },
           style: {
-            backgroundColor: '#000000',
+            background4olor: '#000000',
             '&:hover': { backgroundColor: '#1a1a1a', boxShadow: 'none' },
           },
         },
@@ -67,7 +66,7 @@ const theme = createTheme({
         {
           props: { color: 'primary' },
           style: {
-            backgroundColor: '#000000',
+            background4olor: '#000000',
             color: '#FFFFFF',
             width: 44,
             height: 44,

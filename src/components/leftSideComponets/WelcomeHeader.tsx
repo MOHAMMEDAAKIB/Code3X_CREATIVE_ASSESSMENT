@@ -3,8 +3,8 @@ import { Box, Typography } from '@mui/material';
 
 export default function WelcomeHeader() {
   return (
-    <Box sx={{ mb: 4 }}>
-      <Typography variant="h4" sx={{ fontSize: { xs: 32, md: 38 } }}>
+    <Box  sx={{ mb: 4, textAlign: 'center' }}>
+      <Typography variant="h4" sx={{ fontSize: { xs: 32, md: 38 } }} >
         Welcome back!
       </Typography>
 

@@ -3,21 +3,26 @@ import { Box, Typography, Link } from '@mui/material';
 import WelcomeHeader from './leftSideComponets/WelcomeHeader';
 import LoginForm from './leftSideComponets/LoginForm';
 import SocialLogin from './leftSideComponets/SocialLogin';
+import theme from '../theme/theme';
 
 export default function LeftSide() {
+
   return (
     <Box
       sx={{
         maxWidth: 380,
         mx: { xs: 'auto', md: 0 },
         display: 'flex',
+        margin: 2,
         flexDirection: 'column',
         alignItems: { xs: 'center', md: 'flex-start' },
         py: { xs: 4, md: 8 },
         px: { xs: 3, md: 0 },
       }}
     >
-      <WelcomeHeader />
+      <Box sx={{ width: '100%', alignSelf: { xs: 'center', md: 'flex-start' } }}>
+        <WelcomeHeader />
+      </Box>
 
       <Box sx={{ width: '100%' }}>
         <LoginForm />

@@ -17,7 +17,7 @@ export default function SocialLogin() {
         {[FcGoogle, FaApple, FaFacebook].map((Icon, i) => (
           <IconButton
             key={i}
-            sx={{ bgcolor: '#1A1A1A', width: 44, height: 44, '&:hover': { bgcolor: '#000' } }}
+            sx={{color: 'white', bgcolor: '#1A1A1A', width: 44, height: 44, '&:hover': { bgcolor: '#000' } }}
           >
             <Icon />
           </IconButton>
